@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>dMusic — Under Construction</title>
+  <meta name="description" content="dMusic is getting a fresh coat of paint. Check back soon or drop your email and we'll ping you." />
+  <meta name="theme-color" content="#f97316" />
+  <link rel="icon" href="./assets/app-icon.png" />
+  <meta property="og:title" content="dMusic — Under Construction" />
+  <meta property="og:description" content="We're building a better way to discover and preview music." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="./assets/og-image.png" />
+  <meta property="og:url" content="https://dmusic.example.com" />
+  <style>
+    :root {
+      --brand: #f97316; /* orange-500 */
+      --brand-600: #ea580c;
+      --bg: #f5f5f5;      /* Neutral Gray background */
+      --ink: #111827;
+      --muted: #6b7280;
+      --line: #e5e7eb;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body { margin: 0; font: 16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, "Helvetica Neue", Arial, sans-serif; color: var(--ink); background: var(--bg); }
+
+    .wrap { max-width: 920px; margin: 0 auto; padding: 24px 16px; }
+    header { display: flex; align-items: center; justify-content: space-between; padding: 10px 0 24px; }
+    .brand { display: flex; align-items: center; gap: 10px; font-weight: 900; font-size: 20px; letter-spacing: .2px; }
+    .brand img { width: 28px; height: 28px; border-radius: 6px; box-shadow: 0 2px 6px rgba(0,0,0,.08); }
+
+    .card { border: 1px solid var(--line); background: #fff; border-radius: 18px; padding: 24px; box-shadow: 0 10px 30px rgba(0,0,0,.06); }
+    .hero { display: grid; gap: 12px; place-items: center; text-align: center; padding: 28px 0; }
+    .h1 { font-size: clamp(28px, 5vw, 40px); margin: 0; line-height: 1.1; }
+    .lead { color: var(--muted); margin: 6px 0 14px; font-size: 18px; }
+
+    .row { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; align-items: center; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 12px 16px; border-radius: 12px; border: 1px solid var(--brand-600); background: var(--brand); color: #fff; font-weight: 700; cursor: pointer; text-decoration: none; }
+    .btn.secondary { background: #fff; color: var(--brand); border-color: #fdba74; }
+
+    .notify { display: grid; gap: 10px; grid-template-columns: 1fr auto; max-width: 520px; margin: 10px auto 0; }
+    .notify input { width: 100%; padding: 12px; border: 1px solid var(--line); border-radius: 12px; outline: none; }
+
+    .status { display: inline-flex; align-items: center; gap: 8px; padding: 8px 12px; border: 1px dashed #fed7aa; border-radius: 999px; background: #fff7ed; color: #9a3412; font-size: 12px; font-weight: 600; }
+    .dots { display: inline-block; width: 24px; text-align: left; }
+    .dots::after { content: '●  ●  ●'; letter-spacing: 2px; color: var(--brand); animation: blink 1.4s infinite steps(3); }
+    @keyframes blink { 50% { opacity: .3; } }
+
+    footer { padding: 24px 0 40px; color: var(--muted); }
+    .center { text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand"><img src="./assets/app-icon.png" alt="dMusic app icon"/> dMusic</div>
+      <span class="status">Under construction <span class="dots" aria-hidden="true"></span></span>
+    </header>
+
+    <main class="card hero" role="main">
+      <h1 class="h1">We’re tuning things up 🎶</h1>
+      <p class="lead">A fresh version of dMusic is on the way.</p>
+    </main>
+
+    <footer class="center">
+      © <span id="year"></span> dMusic. All rights reserved.
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
