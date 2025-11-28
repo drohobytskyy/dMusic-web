@@ -522,3 +522,20 @@ footer a {
     padding: 26px 0;
   }
 }
+
+@media (max-width: 720px) {
+  .wrap {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+
+  .section {
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+
+  .hero {
+    padding-top: 40px;
+    padding-bottom: 28px;
+  }
+}
