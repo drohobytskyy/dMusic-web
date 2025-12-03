@@ -1,4 +1,4 @@
-// dMusic shared JS
+// dMusik shared JS
 // Just sets the current year in the footer for now.
 
 document.addEventListener("DOMContentLoaded", function () {

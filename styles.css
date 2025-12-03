@@ -1,4 +1,4 @@
-/* dMusic Landing & Privacy Styles */
+/* dMusik Landing & Privacy Styles */
 
 :root {
   --brand: #f97316;
@@ -525,8 +525,8 @@ footer a {
 
 @media (max-width: 720px) {
   .wrap {
-    padding-left: 28px;
-    padding-right: 28px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .section {
