@@ -576,3 +576,31 @@ footer a {
     padding-bottom: 28px;
   }
 }
+
+@media (max-width: 420px) {
+  /* Keep header in one row and avoid ugly wraps */
+  nav {
+    gap: 10px;
+    flex-wrap: nowrap;
+  }
+
+  /* Hide normal links, keep Contact button + language */
+  nav a:not(.btn) {
+    display: none;
+  }
+
+  /* Make Contact button compact (icon-only) */
+  nav a.btn.secondary span:first-child {
+    display: none;
+  }
+
+  nav a.btn.secondary {
+    padding: 10px 12px;
+  }
+
+  /* Ensure language pill never shrinks weirdly */
+  .lang {
+    margin-left: 0;
+    flex-shrink: 0;
+  }
+}
