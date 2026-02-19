@@ -13,41 +13,137 @@
   <header>
     <div class="wrap nav">
       <div class="brand">
-        <img src="./assets/app-icon.png" alt="dMusik app icon" data-i18n-alt="brand.iconAlt" />
+        <img src="./assets/app-icon.png" alt="dMusik app icon" />
         <span>dMusik</span>
       </div>
       <nav>
-        <a href="index.html" data-i18n="nav.home">Home</a>
-        <a href="index.html#features" data-i18n="nav.features">Features</a>
-        <a href="privacy.html" data-i18n="nav.privacy">Privacy</a>
+        <a href="index.html">Home</a>
+        <a href="index.html#features">Features</a>
+        <a href="privacy.html">Privacy</a>
         <a href="index.html#contact" class="btn secondary">
-          <span data-i18n="nav.contact">Contact</span>
+          Contact
           <span class="icon">✉️</span>
         </a>
-
-        <span class="lang" aria-label="Language switch">
-          <button id="langEN" type="button" aria-pressed="true">EN</button>
-          <button id="langPT" type="button" aria-pressed="false">PT</button>
-        </span>
       </nav>
     </div>
   </header>
 
-  <main class="wrap main-content" id="privacyContent">
-    <!-- Filled by script.js depending on language -->
-    <noscript>
-      <h1>Privacy Policy</h1>
-      <p>Please enable JavaScript to view this page.</p>
-    </noscript>
+  <main class="wrap main-content">
+    <h1>Privacy Policy</h1>
+    <p class="tagline">
+      Last updated: <span id="privacy-updated">2025-01-01</span><br />
+      We care about your privacy and are committed to being transparent about how dMusik handles your data.
+    </p>
+
+    <h2>1. Who we are</h2>
+    <p>
+      dMusik is a personal music discovery app for iOS that lets you search for songs using Apple’s public
+      iTunes Search API, listen to short preview clips, and save favourites and playlists.
+      You can contact us at <a href="mailto:hello.dMusik@icloud.com">hello.dmusik@icloud.com</a>.
+    </p>
+
+    <h2>2. What this policy covers</h2>
+    <p>
+      This policy explains how we handle personal data in:
+    </p>
+    <ul>
+      <li>the dMusik website (this site), and</li>
+      <li>the dMusik iOS app.</li>
+    </ul>
+
+    <h2>3. Website</h2>
+    <p>
+      This website is informational only. We do not:
+    </p>
+    <ul>
+      <li>use cookies,</li>
+      <li>run analytics scripts, or</li>
+      <li>embed third-party trackers.</li>
+    </ul>
+    <p>
+      If you contact us by email, the contents of your message will be stored in our email provider for as long
+      as reasonably necessary to respond and keep a basic record of communication.
+    </p>
+
+    <h2>4. Data in the iOS app</h2>
+    <p>
+      To provide features like favourites and playlists, the dMusik app may store the following information in a
+      secure backend (Supabase):
+    </p>
+    <ul>
+      <li>Your email address (for authentication and login).</li>
+      <li>A basic profile identifier.</li>
+      <li>The tracks you mark as favourites.</li>
+      <li>The playlists you create and the tracks inside them.</li>
+    </ul>
+    <p>
+      We do not collect your contacts, precise location, photos, or other unrelated personal data.
+    </p>
+
+    <h2>5. Music search & previews</h2>
+    <p>
+      When you search for music inside the app, your query is sent from your device to Apple’s public iTunes Search API
+      to retrieve metadata (such as song name, artist, album artwork) and preview URLs.
+    </p>
+    <p>
+      dMusik:
+    </p>
+    <ul>
+      <li>does not use these searches to create profiles across apps or websites,</li>
+      <li>only plays short preview clips provided by Apple, and</li>
+      <li>is not affiliated with Apple Music or iTunes.</li>
+    </ul>
+
+    <h2>6. Legal basis & purpose</h2>
+    <p>
+      We process your data only as needed to:
+    </p>
+    <ul>
+      <li>create and manage your account,</li>
+      <li>sync favourites and playlists across your sessions, and</li>
+      <li>secure the service (for example, prevent abuse or unauthorised access).</li>
+    </ul>
+
+    <h2>7. Data retention & deletion</h2>
+    <p>
+      We keep your account data for as long as your dMusik account remains active.
+      You can delete your account at any time directly from the app. When you delete your account:
+    </p>
+    <ul>
+      <li>your account and associated favourites/playlists are deleted from our Supabase backend, and</li>
+      <li>you are signed out of the app.</li>
+    </ul>
+    <p>
+      Some minimal technical logs (for example, server logs) may be retained for a limited period for security,
+      troubleshooting, and legal compliance, but they are not used to build user profiles.
+    </p>
+
+    <h2>8. Children</h2>
+    <p>
+      dMusik is not directed at children under the age of 13. If you believe a child has created an account
+      without appropriate consent, please contact us so we can remove the account.
+    </p>
+
+    <h2>9. Changes to this policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time. When we do, we will update the “Last updated” date at the top
+      of this page. Significant changes may also be highlighted in the app or on the website.
+    </p>
+
+    <h2>10. Contact</h2>
+    <p>
+      If you have any questions about this Privacy Policy or how dMusik handles your data,
+      please email <a href="mailto:hello.dmusik@icloud.com">hello.dmusik@icloud.com</a>.
+    </p>
   </main>
 
   <footer>
     <div class="wrap" style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center;">
-      <div>© <span id="year"></span> dMusik. <span data-i18n="footer.rights">All rights reserved.</span></div>
+      <div>© <span id="year"></span> dMusik. All rights reserved.</div>
       <div style="display:flex;gap:14px;align-items:center;">
-        <a href="privacy.html" data-i18n="footer.privacy">Privacy</a>
+        <a href="privacy.html">Privacy</a>
         <span style="opacity:0.4;">·</span>
-        <span style="font-size:12px;opacity:0.7;" data-i18n="footer.madeWith">Made with SwiftUI &amp; Supabase</span>
+        <span style="font-size:12px;opacity:0.7;">Made with SwiftUI &amp; Supabase</span>
       </div>
     </div>
   </footer>

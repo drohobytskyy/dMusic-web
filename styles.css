@@ -68,43 +68,6 @@ header {
   padding: 14px 0;
 }
 
-/* Language toggle */
-
-.lang {
-  display: inline-flex;
-  align-items: center;
-  gap: 0;
-  margin-left: 14px;
-  border: 1px solid rgba(248, 250, 252, 0.12);
-  border-radius: 999px;
-  overflow: hidden;
-  background: rgba(15, 23, 42, 0.85);
-  backdrop-filter: blur(12px);
-  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.85);
-}
-
-.lang button {
-  border: 0;
-  background: transparent;
-  color: #e5e7eb;
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: .08em;
-  padding: 8px 10px;
-  cursor: pointer;
-  text-transform: uppercase;
-  transition: background 0.18s ease, color 0.18s ease, opacity 0.18s ease;
-}
-
-.lang button:hover {
-  opacity: 0.9;
-}
-
-.lang button[aria-pressed="true"] {
-  background: radial-gradient(circle at top left, var(--brand-strong), var(--brand));
-  color: #0b1120;
-}
-
 .brand {
   display: flex;
   align-items: center;
@@ -574,33 +537,5 @@ footer a {
   .hero {
     padding-top: 40px;
     padding-bottom: 28px;
-  }
-}
-
-@media (max-width: 420px) {
-  /* Keep header in one row and avoid ugly wraps */
-  nav {
-    gap: 10px;
-    flex-wrap: nowrap;
-  }
-
-  /* Hide normal links, keep Contact button + language */
-  nav a:not(.btn) {
-    display: none;
-  }
-
-  /* Make Contact button compact (icon-only) */
-  nav a.btn.secondary span:first-child {
-    display: none;
-  }
-
-  nav a.btn.secondary {
-    padding: 10px 12px;
-  }
-
-  /* Ensure language pill never shrinks weirdly */
-  .lang {
-    margin-left: 0;
-    flex-shrink: 0;
   }
 }
