@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function () {
         return `
           <h1>Privacy Policy</h1>
           <p class="tagline">
-            Last updated: <span id="privacy-updated">2025-01-01</span><br />
+            Last updated: <span id="privacy-updated">2026-01-01</span><br />
             We care about your privacy and are committed to being transparent about how dMusik handles your data.
           </p>
 
