@@ -47,6 +47,9 @@ document.addEventListener("DOMContentLoaded", function () {
       "features.c3.title": "Favorites & playlists",
       "features.c3.body":
         "Save the tracks you love and build playlists for every mood, synced securely with your account on iOS via Supabase.",
+      "features.c4.title": "Live events discovery",
+      "features.c4.body":
+        "Explore concerts and live music events powered by the Ticketmaster API, helping you move from discovering tracks to finding nearby shows.",
 
       // Screens
       "screens.title": "Screenshots",
@@ -223,6 +226,9 @@ document.addEventListener("DOMContentLoaded", function () {
       "features.c3.title": "Favoritos e playlists",
       "features.c3.body":
         "Guarda as faixas que adoras e cria playlists para cada mood, com sincronização segura na tua conta iOS via Supabase.",
+      "features.c4.title": "Eventos ao vivo",
+      "features.c4.body":
+        "Explora concertos e eventos de música ao vivo com dados da API da Ticketmaster, para passares da descoberta de faixas à descoberta de espetáculos perto de ti.",
 
       // Screens
       "screens.title": "Capturas de ecrã",
@@ -266,7 +272,7 @@ document.addEventListener("DOMContentLoaded", function () {
         return `
           <h1>Política de Privacidade</h1>
           <p class="tagline">
-            Última atualização: <span id="privacy-updated">2025-01-01</span><br />
+            Última atualização: <span id="privacy-updated">2026-01-01</span><br />
             A tua privacidade é importante. Somos transparentes sobre como o dMusik trata os teus dados.
           </p>
 
