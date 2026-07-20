@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
       "hero.cta": "Get the iOS app",
       "hero.note": "Plays short preview clips only. Not a full streaming service.",
       "hero.cardLabel": "Now Playing · dMusik",
+      "hero.webCta": "Lite Web App",
 
       // Features
       "features.title": "Features",
@@ -212,6 +213,7 @@ document.addEventListener("DOMContentLoaded", function () {
       "hero.cta": "Obter a app iOS",
       "hero.note": "Reproduz apenas clipes de prévia. Não é um serviço de streaming completo.",
       "hero.cardLabel": "A tocar · dMusik",
+      "hero.webCta": "Aplicação Web Lite",
 
       // Features
       "features.title": "Funcionalidades",
