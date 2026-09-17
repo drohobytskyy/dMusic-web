@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function () {
           <p>
             dMusik is a personal music discovery app for iOS that lets you search for songs using Apple’s public
             iTunes Search API, listen to short preview clips, and save favourites and playlists.
-            You can contact us at <a href="mailto:hello.dmusik@icloud.com">hello.dmusik@icloud.com</a>.
+            You can contact us at <a href="mailto:hello@dmusik.app">hello@dmusik.app</a>.
           </p>
 
           <h2>2. What this policy covers</h2>
@@ -186,7 +186,7 @@ document.addEventListener("DOMContentLoaded", function () {
           <h2>10. Contact</h2>
           <p>
             If you have any questions about this Privacy Policy or how dMusik handles your data,
-            please email <a href="mailto:hello.dmusik@icloud.com">hello.dmusik@icloud.com</a>.
+            please email <a href="mailto:hello@dmusik.app">hello@dmusik.app</a>.
           </p>
         `;
       },
@@ -282,7 +282,7 @@ document.addEventListener("DOMContentLoaded", function () {
           <p>
             O dMusik é uma app pessoal de descoberta musical para iOS que permite pesquisar músicas usando a API pública de Pesquisa do iTunes da Apple,
             ouvir clipes de prévia e guardar favoritos e playlists.
-            Podes contactar-nos em <a href="mailto:hello.dmusik@icloud.com">hello.dmusik@icloud.com</a>.
+            Podes contactar-nos em <a href="mailto:hello@dmusik.app">hello@dmusik.app</a>.
           </p>
 
           <h2>2. O que esta política cobre</h2>
@@ -365,7 +365,7 @@ document.addEventListener("DOMContentLoaded", function () {
           <h2>10. Contacto</h2>
           <p>
             Se tiveres dúvidas sobre esta Política de Privacidade ou sobre como o dMusik trata os teus dados,
-            envia um email para <a href="mailto:hello.dmusik@icloud.com">hello.dmusik@icloud.com</a>.
+            envia um email para <a href="mailto:hello@dmusik.app">hello@dmusik.app</a>.
           </p>
         `;
       },
