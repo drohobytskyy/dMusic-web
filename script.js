@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
       "brand.iconAlt": "dMusik app icon",
       "nav.home": "Home",
       "nav.features": "Features",
-      "nav.screens": "Screenshots",
+      "nav.screens": "Discover",
       "nav.privacy": "Privacy",
       "nav.contact": "Contact",
 
@@ -36,33 +36,40 @@ document.addEventListener("DOMContentLoaded", function () {
       "hero.webCta": "Lite Web App",
 
       // Features
-      "features.title": "Features",
-      "features.sub":
-        "Everything you need to explore music quickly, save what you love, and keep listening with a smooth iOS-native experience.",
-      "features.c1.title": "Instant music discovery",
-      "features.c1.body":
-        "Type a song, artist, or album and get fast results from Apple’s music catalog using the official iTunes Search API.",
-      "features.c2.title": "High-quality previews",
-      "features.c2.body":
-        "Listen to 30-second preview clips with a sleek mini-player, background audio, and smooth controls like play, pause, next, previous, shuffle and repeat.",
-      "features.c3.title": "Favorites & playlists",
-      "features.c3.body":
-        "Save the tracks you love and build playlists for every mood, synced securely with your account on iOS via Supabase.",
-      "features.c4.title": "Live events discovery",
-      "features.c4.body":
-        "Explore concerts and live music events powered by the Ticketmaster API, helping you move from discovering tracks to finding nearby shows.",
+      "features.kicker": "Built for discovery",
+      "features.title": "More ways to find music you love",
+      "features.sub": "Search when you know what you want, get inspired when you don’t, uncover the story behind a track, and take the experience all the way to live music.",
+      "features.c1.title": "Curated suggestions",
+      "features.c1.body": "Start with hand-picked playlists when you are not sure what to play next.",
+      "features.c2.title": "Fast music discovery",
+      "features.c2.body": "Search songs and artists quickly and jump straight into 30-second previews.",
+      "features.c3.title": "Track Insights",
+      "features.c3.body": "Go beyond playback and discover interesting context and stories behind the music.",
+      "features.c4.title": "Favorites",
+      "features.c4.body": "Keep the tracks you love close and ready to revisit whenever inspiration strikes.",
+      "features.c5.title": "Playlists",
+      "features.c5.body": "Organize discoveries into your own playlists and build a collection around every mood.",
+      "features.c6.title": "Live events",
+      "features.c6.body": "Discover concerts and live music events with Ticketmaster-powered event search.",
 
-      // Screens
-      "screens.title": "Screenshots",
-      "screens.sub":
-        "A clean, dark interface that feels right at home on iOS. Built with SwiftUI, tuned for both small and large screens.",
-      "screens.cap1": "Now Playing",
-      "screens.cap2": "Favorites",
-      "screens.cap3": "Settings & account",
-      "screens.nowPlayingAlt": "dMusik Now Playing screenshot",
-      "screens.playerAlt": "dMusik Player screen",
-      "screens.favsAlt": "dMusik Favorites screen",
-      "screens.settingsAlt": "dMusik Settings screen",
+      // Product story
+      "screens.kicker": "Meet dMusik",
+      "screens.title": "From “what should I play?” to your next live show.",
+      "screens.sub": "dMusik brings discovery, curiosity, organization and live music together in one focused experience.",
+      "screens.moreTitle": "And everything you need in between.",
+      "screens.heroAlt": "Discover music with dMusik",
+      "screens.suggestionsAlt": "Curated suggestion playlists in dMusik",
+      "screens.insightsAlt": "Track Insights in dMusik",
+      "screens.eventsAlt": "Live events discovery in dMusik",
+      "screens.searchAlt": "Music search in dMusik",
+      "screens.favoritesAlt": "Favorites in dMusik",
+      "screens.playlistsAlt": "Playlists in dMusik",
+      "story.suggestions.title": "Start with a spark of inspiration.",
+      "story.suggestions.body": "Curated Suggestions give you somewhere to begin when you know you want music, but not exactly what. Pick a mood or genre and start exploring.",
+      "story.insights.title": "There’s more behind every track.",
+      "story.insights.body": "Track Insights adds context on demand, so a song can become a story instead of just another result in a list.",
+      "story.events.title": "Take the music beyond your headphones.",
+      "story.events.body": "Search live events and concerts with Ticketmaster-powered discovery and turn an artist you found in dMusik into a night out.",
 
       // Privacy teaser
       "privacyTeaser.title": "Privacy at the core",
@@ -197,7 +204,7 @@ document.addEventListener("DOMContentLoaded", function () {
       "brand.iconAlt": "Ícone da app dMusik",
       "nav.home": "Início",
       "nav.features": "Funcionalidades",
-      "nav.screens": "Capturas",
+      "nav.screens": "Descobrir",
       "nav.privacy": "Privacidade",
       "nav.contact": "Contacto",
 
@@ -216,33 +223,40 @@ document.addEventListener("DOMContentLoaded", function () {
       "hero.webCta": "Aplicação Web Lite",
 
       // Features
-      "features.title": "Funcionalidades",
-      "features.sub":
-        "Tudo o que precisas para explorar música rapidamente, guardar o que gostas e continuar a ouvir com uma experiência nativa no iOS.",
-      "features.c1.title": "Descoberta instantânea",
-      "features.c1.body":
-        "Escreve uma música, artista ou álbum e obtém resultados rápidos do catálogo da Apple através da API oficial de Pesquisa do iTunes.",
-      "features.c2.title": "Prévias com qualidade",
-      "features.c2.body":
-        "Ouve clipes de 30 segundos com mini-player, áudio em background e controlos suaves como play, pause, seguinte, anterior, aleatório e repetir.",
-      "features.c3.title": "Favoritos e playlists",
-      "features.c3.body":
-        "Guarda as faixas que adoras e cria playlists para cada mood, com sincronização segura na tua conta iOS via Supabase.",
-      "features.c4.title": "Eventos ao vivo",
-      "features.c4.body":
-        "Explora concertos e eventos de música ao vivo com dados da API da Ticketmaster, para passares da descoberta de faixas à descoberta de espetáculos perto de ti.",
+      "features.kicker": "Feito para descobrir",
+      "features.title": "Mais formas de encontrar música de que gostas",
+      "features.sub": "Pesquisa quando sabes o que queres, inspira-te quando não sabes, descobre a história por detrás de uma faixa e leva a experiência até à música ao vivo.",
+      "features.c1.title": "Sugestões selecionadas",
+      "features.c1.body": "Começa com playlists selecionadas quando não sabes bem o que ouvir a seguir.",
+      "features.c2.title": "Descoberta musical rápida",
+      "features.c2.body": "Pesquisa músicas e artistas rapidamente e ouve de imediato prévias de 30 segundos.",
+      "features.c3.title": "Track Insights",
+      "features.c3.body": "Vai além da reprodução e descobre contexto e histórias interessantes por detrás da música.",
+      "features.c4.title": "Favoritos",
+      "features.c4.body": "Mantém por perto as faixas de que gostas para voltares a elas sempre que quiseres.",
+      "features.c5.title": "Playlists",
+      "features.c5.body": "Organiza as tuas descobertas em playlists e cria uma coleção para cada mood.",
+      "features.c6.title": "Eventos ao vivo",
+      "features.c6.body": "Descobre concertos e eventos de música ao vivo através da pesquisa de eventos da Ticketmaster.",
 
-      // Screens
-      "screens.title": "Capturas de ecrã",
-      "screens.sub":
-        "Uma interface limpa e escura, perfeita para iOS. Construída com SwiftUI e afinada para ecrãs pequenos e grandes.",
-      "screens.cap1": "A tocar",
-      "screens.cap2": "Favoritos",
-      "screens.cap3": "Definições e conta",
-      "screens.nowPlayingAlt": "Captura do ecrã “A tocar” do dMusik",
-      "screens.playerAlt": "Ecrã do player do dMusik",
-      "screens.favsAlt": "Ecrã de favoritos do dMusik",
-      "screens.settingsAlt": "Ecrã de definições do dMusik",
+      // Product story
+      "screens.kicker": "Conhece o dMusik",
+      "screens.title": "Do “o que vou ouvir?” ao teu próximo concerto.",
+      "screens.sub": "O dMusik junta descoberta, curiosidade, organização e música ao vivo numa experiência focada.",
+      "screens.moreTitle": "E tudo o que precisas pelo caminho.",
+      "screens.heroAlt": "Descobrir música com o dMusik",
+      "screens.suggestionsAlt": "Playlists de sugestões selecionadas no dMusik",
+      "screens.insightsAlt": "Track Insights no dMusik",
+      "screens.eventsAlt": "Descoberta de eventos ao vivo no dMusik",
+      "screens.searchAlt": "Pesquisa musical no dMusik",
+      "screens.favoritesAlt": "Favoritos no dMusik",
+      "screens.playlistsAlt": "Playlists no dMusik",
+      "story.suggestions.title": "Começa com uma faísca de inspiração.",
+      "story.suggestions.body": "As Sugestões dão-te um ponto de partida quando queres ouvir música, mas ainda não sabes exatamente o quê. Escolhe um mood ou género e começa a explorar.",
+      "story.insights.title": "Há mais por detrás de cada faixa.",
+      "story.insights.body": "O Track Insights acrescenta contexto quando quiseres, para que uma música se possa tornar numa história e não apenas noutro resultado de pesquisa.",
+      "story.events.title": "Leva a música para além dos auscultadores.",
+      "story.events.body": "Pesquisa eventos e concertos com descoberta através da Ticketmaster e transforma um artista que encontraste no dMusik numa noite ao vivo.",
 
       // Privacy teaser
       "privacyTeaser.title": "Privacidade em primeiro lugar",
