@@ -728,3 +728,38 @@ footer a {
   .hero-card { padding: 12px; }
   .hero-card-label { padding-left: 4px; }
 }
+
+/* v2 positioning: primary discovery story + independent brand section */
+.primary-feature {
+  border-color: rgba(249,115,22,.34);
+  background: linear-gradient(145deg, rgba(249,115,22,.09), rgba(15,23,42,.55));
+}
+.support-feature h4 {
+  margin: 16px 2px 6px;
+  font-size: 18px;
+  letter-spacing: -.02em;
+}
+.support-feature p {
+  margin: 0 2px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+.independent-section { padding-top: 28px; }
+.independent-card {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: clamp(28px, 5vw, 54px);
+  text-align: center;
+  border: 1px solid rgba(148,163,184,.22);
+  border-radius: 28px;
+  background: radial-gradient(circle at 50% 0%, rgba(249,115,22,.12), transparent 52%), rgba(15,23,42,.48);
+}
+.independent-card h2 { margin: 4px 0 18px; font-size: clamp(28px, 4vw, 42px); letter-spacing: -.035em; }
+.independent-card p { max-width: 720px; margin: 0 auto 12px; color: var(--muted); line-height: 1.75; }
+.independent-actions { justify-content: center; margin-top: 24px; }
+@media (max-width: 720px) {
+  .support-feature { flex: 0 0 min(82vw, 330px); scroll-snap-align: center; }
+  .support-feature .store-shot { width: 100%; }
+  .independent-card { text-align: left; border-radius: 22px; }
+  .independent-actions { justify-content: flex-start; }
+}
