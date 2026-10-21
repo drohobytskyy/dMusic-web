@@ -1,0 +1,20 @@
+/* Phase 3 — Signature Experience. Decorative vinyl; existing copy and links remain unchanged. */
+.cinematic-finale{display:grid;grid-template-columns:minmax(170px,.72fr) minmax(0,1.28fr);align-items:center;gap:clamp(22px,5vw,78px);overflow:hidden;isolation:isolate}
+.finale-copy{min-width:0;position:relative;z-index:1}
+.vinyl-stage{display:grid;place-items:center;min-width:0;aspect-ratio:1;position:relative}
+.vinyl-stage::before{content:"";position:absolute;inset:6%;border-radius:50%;background:radial-gradient(circle,rgba(249,115,22,.24),rgba(249,115,22,.08) 48%,transparent 70%);filter:blur(28px);pointer-events:none}
+.vinyl-record{width:min(100%,340px);aspect-ratio:1;border-radius:50%;display:grid;place-items:center;position:relative;box-shadow:0 24px 50px rgba(0,0,0,.5),0 0 50px rgba(249,115,22,.12),inset 0 0 0 2px rgba(255,255,255,.09);background:repeating-radial-gradient(circle at center,transparent 0px,transparent 4px,rgba(255,255,255,.065) 4.7px,transparent 5.5px),conic-gradient(from 35deg,#08090c,#303039 14%,#0a0b0f 28%,#24252d 43%,#08090c 59%,#33313a 74%,#0a0b0f 88%,#08090c);animation:dm-vinyl-spin 24s linear infinite;animation-play-state:paused}
+.vinyl-record::before{content:"";position:absolute;inset:3%;border-radius:50%;background:conic-gradient(from 20deg,transparent 0deg,rgba(255,181,106,.17) 35deg,transparent 72deg,transparent 200deg,rgba(255,255,255,.1) 235deg,transparent 270deg);pointer-events:none}
+.vinyl-label{width:29%;aspect-ratio:1;border-radius:50%;display:grid;place-items:center;background:#f97316;border:3px solid rgba(255,201,148,.5);box-shadow:0 0 0 2px rgba(0,0,0,.5),0 3px 18px rgba(0,0,0,.55);overflow:hidden}
+.vinyl-label img{width:100%;height:100%;object-fit:cover;border-radius:50%}
+.vinyl-record::after{content:"";position:absolute;top:50%;left:50%;width:7px;height:7px;border-radius:50%;background:#d6d6d6;transform:translate(-50%,-50%);box-shadow:0 0 2px #000}
+.vinyl-stage.is-playing .vinyl-record{animation-play-state:running}
+@keyframes dm-vinyl-spin{to{transform:rotate(360deg)}}
+@media(hover:hover) and (pointer:fine){.vinyl-stage:hover .vinyl-record{animation-duration:48s}}
+@media(max-width:760px){.cinematic-finale{grid-template-columns:1fr;gap:18px;text-align:center}.vinyl-stage{width:min(56vw,230px);margin-inline:auto}.finale-copy .hero-actions{justify-content:center}}
+@media(max-width:420px){.vinyl-stage{width:min(52vw,185px)}.cinematic-finale{gap:12px}}
+@media(prefers-reduced-motion:reduce){.vinyl-record{animation:none!important}.vinyl-stage.is-playing .vinyl-record{animation-play-state:paused}}
+/* Usability refinements */
+:where(a,button):focus-visible{outline:3px solid #ffb36b;outline-offset:4px}
+.story-image img,.store-shot img,.hero-card img{max-width:100%;height:auto}
+@media(max-width:720px){.story-row,.story-copy,.section-heading{min-width:0}.hero-actions .btn{min-height:48px}}

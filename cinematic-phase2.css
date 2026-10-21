@@ -1,0 +1,14 @@
+/* Phase 2: progressive enhancement, with a fully visible no-JS baseline. */
+.story-row,.support-feature,.feature-card{position:relative}
+.story-row::after{content:"";position:absolute;inset:8% -3%;z-index:-1;pointer-events:none;border-radius:50%;opacity:.6;filter:blur(65px);background:radial-gradient(ellipse,rgba(249,115,22,.10),transparent 67%)}
+.story-row:nth-child(2)::after{background:radial-gradient(ellipse,rgba(255,180,100,.085),transparent 67%)}
+.story-row:nth-child(3)::after{background:radial-gradient(ellipse,rgba(251,100,32,.15),transparent 67%)}
+.story-image{--tilt-x:0deg;--tilt-y:0deg;--lift:0px;transform:perspective(1200px) rotateX(var(--tilt-x)) rotateY(var(--tilt-y)) translateY(var(--lift));transition:transform .55s cubic-bezier(.2,.8,.2,1),filter .5s ease;transform-style:preserve-3d}
+.story-image:hover{--lift:-7px;filter:drop-shadow(0 30px 54px rgba(249,115,22,.12))}
+@media (prefers-reduced-motion:no-preference){
+  .phase2-ready .phase2-reveal{opacity:0;transform:translateY(24px);transition:opacity .75s ease,transform .75s cubic-bezier(.2,.75,.2,1)}
+  .phase2-ready .phase2-reveal.is-visible{opacity:1;transform:translateY(0)}
+  .phase2-ready .story-copy.phase2-reveal{transition-delay:90ms}
+}
+@media (hover:none),(pointer:coarse),(max-width:900px){.story-image,.story-image:hover{transform:none!important;filter:drop-shadow(0 24px 44px rgba(0,0,0,.35))}}
+@media (prefers-reduced-motion:reduce){.phase2-reveal,.phase2-reveal.is-visible{opacity:1!important;transform:none!important;transition:none!important}.story-image,.story-image:hover{transform:none!important;transition:none!important}}

@@ -20,6 +20,9 @@
   <meta name="twitter:image" content="./assets/en/og-image.png" data-i18n-src-base="./assets/{lang}/og-image.png" />
 
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="cinematic.css" />
+  <link rel="stylesheet" href="cinematic-phase2.css" />
+  <link rel="stylesheet" href="cinematic-phase3.css" />
 </head>
 <body>
   <header>
@@ -138,7 +141,13 @@
 
     <!-- INDEPENDENT STORY -->
     <section class="wrap section independent-section">
-      <div class="independent-card">
+      <div class="independent-card cinematic-finale">
+        <div class="vinyl-stage" aria-hidden="true">
+          <div class="vinyl-record">
+            <div class="vinyl-label"><img src="./assets/app-icon.png" alt="" width="82" height="82" loading="lazy" /></div>
+          </div>
+        </div>
+        <div class="finale-copy">
         <span class="section-kicker" data-i18n="independent.kicker">Independent dMusik</span>
         <h2 data-i18n="independent.title">Built independently. Driven by curiosity.</h2>
         <p data-i18n="independent.body1"></p>
@@ -146,6 +155,7 @@
         <div class="hero-actions independent-actions">
           <a class="btn secondary" href="https://apps.apple.com/app/dmusik/id6756020821"><span data-i18n="hero.cta">Get dMusik for iPhone</span><span class="icon">🎧</span></a>
           <a class="btn secondary" href="https://drohobytskyy.github.io/dmusik-web-app" target="_blank" rel="noopener"><span data-i18n="hero.webCta">Try dMusik Lite</span><span class="icon">🌐</span></a>
+        </div>
         </div>
       </div>
     </section>
@@ -175,6 +185,8 @@
   </footer>
 
   <script src="script.js"></script>
+  <script src="cinematic-phase2.js" defer></script>
+  <script src="cinematic-phase3.js" defer></script>
 </body>
 </html>
 

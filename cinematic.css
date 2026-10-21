@@ -1,0 +1,28 @@
+/* dMusik Cinematic — Phase 1. Additive visual layer; preserves original content and functionality. */
+:root{--cinema-orange:#f97316;--cinema-amber:#ffb36b}
+html{scroll-behavior:smooth}
+body{background:#08090e;overflow-x:hidden}
+body::before{content:"";position:absolute;z-index:-1;pointer-events:none;top:0;left:0;right:0;height:1100px;background:radial-gradient(ellipse 48% 37% at 76% 24%,rgba(249,115,22,.19),transparent 78%),radial-gradient(ellipse 38% 28% at 12% 43%,rgba(255,179,107,.075),transparent 78%)}
+header{backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);background:rgba(8,9,14,.76)}
+.hero{position:relative;min-height:min(790px,90svh);align-items:center;isolation:isolate;padding-top:clamp(64px,9vw,125px);padding-bottom:clamp(80px,10vw,130px)}
+.hero::before{content:"";position:absolute;z-index:-1;pointer-events:none;inset:2% -9% 0 38%;border-radius:50%;background:radial-gradient(ellipse,rgba(249,115,22,.21),rgba(249,115,22,.07) 32%,transparent 68%);filter:blur(45px);animation:cinema-breathe 24s ease-in-out infinite alternate}
+.hero .h1{font-size:clamp(46px,5.5vw,88px);line-height:1.035;letter-spacing:-.065em;max-width:800px;text-wrap:balance}
+.hero .lead{font-size:clamp(16px,1.45vw,20px);line-height:1.75;max-width:510px}
+.hero-card{transform:perspective(1300px) rotateY(-5deg) rotateX(2deg) translateY(-7px);box-shadow:0 40px 100px rgba(0,0,0,.65),0 0 95px rgba(249,115,22,.11);transition:transform .7s cubic-bezier(.2,.8,.2,1),box-shadow .7s ease;will-change:transform}
+.hero-card:hover{transform:perspective(1300px) rotateY(0) rotateX(0) translateY(-14px);box-shadow:0 55px 120px rgba(0,0,0,.7),0 0 105px rgba(249,115,22,.17)}
+.hero-actions .btn{min-height:48px;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
+.hero-actions .btn:hover{transform:translateY(-3px);box-shadow:0 14px 40px rgba(249,115,22,.16)}
+.section-heading h2{letter-spacing:-.045em;text-wrap:balance}
+.section{scroll-margin-top:90px}
+.feature-card{transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease;background-image:linear-gradient(145deg,rgba(255,255,255,.025),transparent)}
+.feature-card:hover{transform:translateY(-5px);box-shadow:0 20px 65px rgba(0,0,0,.27);border-color:rgba(249,115,22,.45)}
+.story-row{position:relative;isolation:isolate}
+.story-row::before{content:"";position:absolute;z-index:-1;inset:9% 8%;pointer-events:none;background:radial-gradient(ellipse at 30% 50%,rgba(249,115,22,.09),transparent 65%);filter:blur(26px)}
+.story-image{filter:drop-shadow(0 24px 44px rgba(0,0,0,.35))}
+.story-copy h3{font-size:clamp(29px,3.5vw,46px);letter-spacing:-.045em}
+.story-number{color:var(--cinema-amber)}
+.independent-card{box-shadow:0 30px 100px rgba(0,0,0,.2);background:radial-gradient(ellipse at 50% -10%,rgba(249,115,22,.18),transparent 64%),rgba(15,23,42,.48)}
+@keyframes cinema-breathe{from{transform:translate(-2%,0) scale(.95);opacity:.75}to{transform:translate(3%,2%) scale(1.08);opacity:1}}
+@media(max-width:900px){.hero{min-height:0}.hero .h1{font-size:clamp(42px,7vw,64px)}.hero-card{transform:none;will-change:auto}.hero-card:hover{transform:translateY(-5px)}}
+@media(max-width:720px){.hero{padding-top:56px;padding-bottom:72px}.hero .h1{font-size:clamp(39px,10vw,56px);letter-spacing:-.055em}.hero::before{inset:20% -30% 0 0;filter:blur(32px)}.hero-actions .btn{min-height:48px}.story-copy h3{font-size:clamp(27px,7vw,38px)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hero::before{animation:none}.hero-card,.hero-card:hover{transform:none;will-change:auto}.feature-card,.feature-card:hover,.hero-actions .btn,.hero-actions .btn:hover{transition:none;transform:none}}
