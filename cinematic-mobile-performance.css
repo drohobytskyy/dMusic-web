@@ -1,0 +1,30 @@
+/* Mobile Safari stability: keep the cinematic palette, avoid expensive compositing. */
+@media (max-width: 900px), (hover: none) and (pointer: coarse) {
+  html { scroll-behavior: auto; }
+  body::before, .hero::before, .story-row::before, .story-row::after,
+  .vinyl-stage::before { animation: none !important; filter: none !important; }
+  .hero::before { background: radial-gradient(ellipse at center, rgba(249,115,22,.13), transparent 70%); }
+  .story-row::before, .story-row::after { opacity: .35; }
+  header, .site-header, .hero-card, .feature-card, .independent-card,
+  .vinyl-record, .story-image, .story-image:hover {
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+    filter: none !important;
+    will-change: auto !important;
+    transform-style: flat !important;
+  }
+  .hero-card, .hero-card:hover, .story-image, .story-image:hover,
+  .feature-card, .feature-card:hover, .support-feature,
+  .phase2-reveal, .phase2-reveal.is-visible {
+    transform: none !important;
+    transition: none !important;
+    opacity: 1 !important;
+  }
+  .vinyl-record, .vinyl-stage.is-playing .vinyl-record {
+    animation: none !important;
+  }
+  .hero-actions .btn:hover { transform: none !important; box-shadow: none !important; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .vinyl-record { animation: none !important; }
+}

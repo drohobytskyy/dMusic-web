@@ -2,6 +2,8 @@
 (function () {
   'use strict';
   var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  // Mobile Safari: keep all content visible; avoid scroll observers and 3D layers.
+  if (window.matchMedia('(max-width: 900px), (hover: none) and (pointer: coarse)').matches) return;
   var targets = Array.prototype.slice.call(document.querySelectorAll('.story-image, .story-copy, .support-feature, .feature-card, .section-heading, .independent-card'));
   if (!reduceMotion.matches && 'IntersectionObserver' in window) {
     targets.forEach(function (el) { el.classList.add('phase2-reveal'); });

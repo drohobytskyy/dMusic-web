@@ -3,6 +3,8 @@
   'use strict';
   var stage = document.querySelector('.vinyl-stage');
   if (!stage) return;
+  // The vinyl stays visible but static on touch devices and smaller screens.
+  if (window.matchMedia('(max-width: 900px), (hover: none) and (pointer: coarse)').matches) return;
   var motion = window.matchMedia('(prefers-reduced-motion: reduce)');
   var visible = false;
   function update() {
