@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
       "hero.badge2": "30-second previews",
       "hero.badge3": "Favorites & playlists",
       "hero.cta": "Get dMusik for iPhone",
-      "hero.note": "Plays short preview clips only. Not a full streaming service.",
+      "hero.note": "Preview music in dMusik. Full tracks through Apple Music require a subscription.",
       "hero.cardLabel": "Now Playing · dMusik",
       "hero.webCta": "Try dMusik Lite",
 
@@ -69,6 +69,11 @@ document.addEventListener("DOMContentLoaded", function () {
       "story.insights.body": "Finding a song can be the beginning, not the end. Track Story lets you explore more about supported tracks and discover the context behind the music.",
       "story.events.title": "Take the music beyond your headphones.",
       "story.events.body": "Discover live events around the artists you’re exploring and see where your next discovery might take you.",
+      "screens.appleMusicAlt": "Apple Music full-track playback in dMusik (subscription required)",
+      "story.appleMusic.kicker": "New in dMusik",
+      "story.appleMusic.title": "Discover with dMusik. Listen with Apple Music.",
+      "story.appleMusic.body": "Discover music with dMusik, then enjoy full tracks and playlists through Apple Music with an active subscription.",
+      "story.appleMusic.disclaimer": "Apple Music is a separate service and requires an active subscription. dMusik is not affiliated with Apple.",
       "support.search.title": "Find artists, tracks & albums.",
       "support.search.body": "Search music in seconds.",
       "support.favorites.title": "Save the music you love.",
@@ -91,7 +96,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "Want access to the iOS TestFlight, partnership info, feedback, or to contribute? Drop a message and we’ll get back to you.",
       "contact.emailLabel": "Email:",
       "contact.note1":
-        "dMusik is not a full music streaming service. It uses Apple’s public iTunes Search API and only plays short preview clips provided by Apple.",
+        "dMusik is a music discovery app offering previews and optional full-track playback through Apple Music with an active subscription. Apple Music is a separate service.",
       "contact.note2":
         "The iOS app also includes in-app account deletion so you can remove your data at any time.",
 
@@ -225,7 +230,7 @@ document.addEventListener("DOMContentLoaded", function () {
       "hero.badge2": "Prévias de 30 segundos",
       "hero.badge3": "Favoritos e playlists",
       "hero.cta": "Obtém o dMusik para iPhone",
-      "hero.note": "Reproduz apenas clipes de prévia. Não é um serviço de streaming completo.",
+      "hero.note": "Ouve previews no dMusik. As faixas completas através do Apple Music requerem uma subscrição.",
       "hero.cardLabel": "A tocar · dMusik",
       "hero.webCta": "Experimenta o dMusik Lite",
 
@@ -264,6 +269,11 @@ document.addEventListener("DOMContentLoaded", function () {
       "story.insights.body": "Encontrar uma música pode ser apenas o início. Com o Track Story, podes explorar mais sobre as faixas disponíveis e descobrir o contexto por detrás da música.",
       "story.events.title": "Leva a música para além dos auscultadores.",
       "story.events.body": "Descobre eventos ao vivo relacionados com os artistas que estás a explorar e vê onde a tua próxima descoberta te pode levar.",
+      "screens.appleMusicAlt": "Reprodução de faixas completas do Apple Music no dMusik (subscrição necessária)",
+      "story.appleMusic.kicker": "Novidade no dMusik",
+      "story.appleMusic.title": "Descobre com o dMusik. Ouve com o Apple Music.",
+      "story.appleMusic.body": "Descobre música com o dMusik e desfruta de faixas completas e playlists através do Apple Music, com uma subscrição ativa.",
+      "story.appleMusic.disclaimer": "O Apple Music é um serviço independente e requer uma subscrição ativa. O dMusik não é afiliado à Apple.",
       "support.search.title": "Encontra artistas, faixas e álbuns.",
       "support.search.body": "Pesquisa música em segundos.",
       "support.favorites.title": "Guarda a música de que gostas.",
@@ -286,7 +296,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "Queres acesso ao iOS TestFlight, parcerias, feedback ou contribuir? Envia uma mensagem e respondemos assim que possível.",
       "contact.emailLabel": "Email:",
       "contact.note1":
-        "O dMusik não é um serviço de streaming completo. Usa a API pública de Pesquisa do iTunes da Apple e reproduz apenas clipes de prévia fornecidos pela Apple.",
+        "O dMusik é uma app de descoberta musical com previews e reprodução opcional de faixas completas através do Apple Music, mediante subscrição ativa. O Apple Music é um serviço independente.",
       "contact.note2":
         "A app iOS também inclui eliminação de conta dentro da app para poderes remover os teus dados quando quiseres.",
 
